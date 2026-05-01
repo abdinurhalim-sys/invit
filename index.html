@@ -514,7 +514,7 @@ function showScene(idx){
 
 function initSceneController(){
   var navItems=document.querySelectorAll('.bn-item[data-idx]'),hint=document.getElementById('pauseHint');
-  var isPaused=false,autoTimer=null,resumeTimer=null,DELAY=10000,PAUSE_RESUME=10000;
+  var isPaused=false,autoTimer=null,resumeTimer=null,DELAY=10000,PAUSE_RESUME=15000;
   var touchStartY=0,touchStartTime=0;
 
   navItems.forEach(function(btn){btn.addEventListener('click',function(){goTo(parseInt(btn.dataset.idx))})});
